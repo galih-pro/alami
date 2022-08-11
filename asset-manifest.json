@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/alami/static/css/main.33522df6.css",
+    "main.js": "/alami/static/js/main.8598fa99.js",
+    "static/js/787.d970b97a.chunk.js": "/alami/static/js/787.d970b97a.chunk.js",
+    "static/media/hero-1.jpg": "/alami/static/media/hero-1.8242ef73413ee502b2d1.jpg",
+    "static/media/wavy.svg": "/alami/static/media/wavy.4e3063ce07a4faa684ec.svg",
+    "index.html": "/alami/index.html",
+    "main.33522df6.css.map": "/alami/static/css/main.33522df6.css.map",
+    "main.8598fa99.js.map": "/alami/static/js/main.8598fa99.js.map",
+    "787.d970b97a.chunk.js.map": "/alami/static/js/787.d970b97a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33522df6.css",
+    "static/js/main.8598fa99.js"
+  ]
+}
