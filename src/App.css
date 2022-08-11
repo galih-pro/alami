@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* global */
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span.material-symbols-outlined{
+  vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.__container{
+  padding: 0 2rem;
+}
+
+.__header-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.__btn{
+  background-color: transparent;
+  border: unset;
+  cursor: pointer;
+  border-radius: 500px;
+  text-decoration: none;
+}
+
+.__btn:hover{
+  box-shadow: inset 0px 0px 22px -14px rgb(0 0 0 / 48%), -9px 13px 9px -5px rgb(0 0 0 / 23%);
+  transition: .3s linear
+}
+
+.__nav-link-list{
+  list-style-type: none;
+}
+
+.__nav-link{
+  color: var(--black);
+  text-decoration: none;
+}
+
+.__txt-tagline{
+  font-family: 'Sofia', cursive;
+  font-size: 42px;
+}
+
+.__txt-title{
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.__txt-para{
+  font-size: 22px;
+}
+
+.__txt-para-2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.__txt-title-2{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.__txt-title-3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:1024px) {
+  .__container{
+    padding: 0 1rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .__txt-tagline{
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .__txt-title{
+    font-size: 24px;
+  }
+  
+  .__txt-para{
+    font-size: 12px;
+  }
+  
+  .__txt-para-2{
+    font-size: 14px;
+  }
+  
+  .__txt-title-2{
+    font-size: 20px;
+  }
+  
+  .__txt-title-3{
+    font-size: 18px;
+  }
+
+  .__btn:hover{
+    box-shadow: unset;
   }
 }
