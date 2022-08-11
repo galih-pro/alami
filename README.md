@@ -12,7 +12,13 @@ Clone github repository
 
 ```sh
 git clone https://github.com/galih-pro/alami.git
+```
+
+Install dependancy
+
+```sh
 cd alami
+npm install
 ```
 
 Run or Deploy app on local server
