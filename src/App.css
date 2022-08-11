@@ -68,7 +68,7 @@ span.material-symbols-outlined{
   font-weight: bold;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
   .__container{
     padding: 0 1rem;
   }
@@ -100,4 +100,33 @@ span.material-symbols-outlined{
   .__btn:hover{
     box-shadow: unset;
   }
+}
+
+@media screen and (min-width:1024px) and (max-width:1408px) {
+  .__txt-tagline{
+    font-size: 32px;
+  }
+  
+  .__txt-title{
+    font-size: 48px;
+  }
+  
+  .__txt-para{
+    font-size: 18px;
+  }
+  
+  .__txt-para-2{
+    font-size: 18px;
+  }
+  
+  .__txt-title-2{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .__txt-title-3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+    
 }

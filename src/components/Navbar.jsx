@@ -1,16 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Navbar.css'
-import Sidebar from './Sidebar'
 
-const Navbar = () => {
-    const[isShow, setIsShow] = useState(false);
-
-    const handleClick = event => {
-        setIsShow(current => !current);
-        console.log(isShow)
-      };
+const Navbar = (props) => {
+    const btn = props.onClick;
   return (
-    <>
     <header className='__header __container'>
         <nav className='__nav'>
             <div className='__nav-left'>
@@ -30,7 +23,7 @@ const Navbar = () => {
             <div className='__nav-right'>
                 <ul className='__nav-right-list'>
                     <li className='__nav-link-list'>
-                        <button className='__btn __nav-burger __not-show' id='burger' onClick={handleClick}>
+                        <button className='__btn __nav-burger __not-show' id='burger' onClick={btn}>
                             <span className="material-symbols-outlined">menu</span>
                         </button>
                     </li>
@@ -46,14 +39,7 @@ const Navbar = () => {
             </div>
         </nav>
     </header>
-
-    {isShow && <Show />}
-    </>
   ) 
 }
 
 export default Navbar
-
-function Show() {
-    return <Sidebar />
-}

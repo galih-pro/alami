@@ -38,13 +38,19 @@
     color: var(--outline-green);
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .__sidebar{
+        visibility: hidden;
         position: fixed;
         top: 68px;
         transform: translateY(0);
         left: 0;
         width: 100%;
+        transition: visible 1s ease-in;
+    }
+
+    .__show{
+        visibility: visible;
     }
 }
 

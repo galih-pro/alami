@@ -52,7 +52,7 @@
 button[type='reset']{
     display: none;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .__header{
         box-shadow: unset;
         -webkit-box-shadow: unset;
@@ -162,4 +162,12 @@ button[type='reset']{
     .__nav-form input:focus + .__btn-search::before{
         height: 13px;
     }
+}
+
+@media screen and (min-width:1024px) and (max-width:1408px) {
+    .__nav-left-list .__nav-link-list,
+    .__nav-right-list .__nav-link-list{
+        font-size: 18px;
+    }
+    
 }

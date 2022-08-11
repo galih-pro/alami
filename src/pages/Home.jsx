@@ -1,13 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
-// import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar'
 import './Home.css'
 
 function Home() {
+  const[isShow, setIsShow] = useState(false);
+
+    const handleClick = () => {
+        setIsShow(!isShow);
+      };
 return (
 <>
-  <Navbar />
-  {/* <Sidebar /> */}
+  <Navbar onClick={handleClick} />
+  <Sidebar isShow={isShow} />
   <main>
     {/* first section */}
     <section className='__main'>

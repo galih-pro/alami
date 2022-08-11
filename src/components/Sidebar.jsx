@@ -1,9 +1,10 @@
 import React from 'react'
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const sidebarClass = props.isShow ? "__sidebar __show" : "__sidebar";
   return (
-    <div className='__sidebar' id='sidebar'>
+    <div className={sidebarClass} id='sidebar'>
         <nav className='__sidebar-nav'>
             <ul className='__sidebar-nav-list'>
                 <li className='__nav-link-list'><a className='__nav-link' href="#"><span className="material-symbols-outlined">chat_bubble</span></a></li>
